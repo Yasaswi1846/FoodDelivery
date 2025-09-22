@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Swiggy Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #ffe5d9 100%);
+        }
+        .auth-container {
+            max-width: 400px;
+            margin: 5rem auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(255,110,48,0.12);
+            padding: 2rem;
+        }
+        h2 {
+            color: #ff6e30;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ff6e30;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ffb34733;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .signup-btn {
+            width: 100%;
+            background: linear-gradient(90deg, #ff6e30 60%, #ffb347 100%);
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .signup-btn:hover {
+            background: linear-gradient(90deg, #ffb347, #ff6e30);
+        }
+        .auth-link {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            color: #ff6e30;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <a href="login.html" class="auth-link">Already have an account? Login</a>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

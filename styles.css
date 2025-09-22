@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+header {
+    background: linear-gradient(90deg, #ff6e30, #ffb347);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #333;
+}
+#hero {
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#hero p {
+    font-size: 1.2rem;
+}
+#restaurants {
+    padding: 2rem;
+}
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.restaurant-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+.restaurant-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+.restaurant-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.restaurant-card .info {
+    padding: 1rem;
+}
+.restaurant-card .info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+.restaurant-card .info p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+#cart {
+    background: #fff;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.cart-items {
+    margin-bottom: 1rem;
+}
+.checkout-btn {
+    background: linear-gradient(90deg, #ff6e30, #ffb347);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.checkout-btn:hover {
+    background: linear-gradient(90deg, #ffb347, #ff6e30);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 0 0 12px 12px;
+}

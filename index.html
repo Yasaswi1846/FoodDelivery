@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #ffe5d9 100%);
+        }
+        header {
+            background: linear-gradient(90deg, #ff6e30 60%, #ffb347 100%);
+            box-shadow: 0 2px 8px rgba(255,110,48,0.08);
+        }
+        #hero {
+            background: linear-gradient(120deg, #ffb347cc 0%, #ff6e30cc 100%), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 4px 24px rgba(255,110,48,0.12);
+        }
+        #restaurants h2, #cart h2 {
+            color: #ff6e30;
+        }
+        .restaurant-card {
+            border: 2px solid #ffb34733;
+        }
+        .restaurant-card .info h3 {
+            color: #ff6e30;
+        }
+        .checkout-btn {
+            background: linear-gradient(90deg, #ff6e30 60%, #ffb347 100%);
+            box-shadow: 0 2px 8px rgba(255,110,48,0.12);
+        }
+        footer {
+            background: linear-gradient(90deg, #ff6e30 60%, #ffb347 100%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Swiggy Clone</h1>
+        <nav>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#cart">Cart</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>Order Food Online</h2>
+        <p>Delicious meals delivered to your doorstep!</p>
+    </section>
+    <section id="restaurants">
+        <h2>Popular Restaurants</h2>
+        <button id="find-nearby" style="background:linear-gradient(90deg,#ff6e30 60%,#ffb347 100%);color:#fff;border:none;padding:0.7rem 1.5rem;border-radius:8px;cursor:pointer;margin-bottom:1rem;">Find Nearby Restaurants</button>
+        <div class="restaurant-list">
+            <!-- Restaurant cards will be dynamically loaded here -->
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be shown here -->
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Swiggy Clone. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
